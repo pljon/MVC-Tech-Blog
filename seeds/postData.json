@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Why I switched to VIM",
+        "content": "I have been a long-time user of Sublime Text for my text editing needs, but I recently made the switch to VIM and it has been a game-changer for my workflow. In this post, I will explain why I switched and the benefits I have experienced.",
+        "date_created": "2022-01-01 12:00:00",
+        "user_id": 1
+    },
+    {
+        "title": "Exploring Node.js Streams",
+        "content": "Streams are a powerful feature in Node.js that allow for efficient handling of large amounts of data. In this post, I will dive into what streams are and how they can be used to improve the performance of your Node.js applications.",
+        "date_created": "2022-02-01 12:00:00",
+        "user_id": 2
+    },
+    {
+        "title": "The Future of Web Development",
+        "content": "Web development is constantly evolving, and it can be hard to keep up with the latest trends and technologies. In this post, I will discuss some of the most exciting developments in the world of web development and what we can expect in the coming years.",
+        "date_created": "2022-03-01 12:00:00",
+        "user_id": 3
+    },
+    {
+        "title": "Why I love GraphQL",
+        "content": "GraphQL is a query language for your API that was developed by Facebook. In this post, I will explain why I have fallen in love with GraphQL and how it has improved my development experience.",
+        "date_created": "2022-04-01 12:00:00",
+        "user_id": 4
+    },
+    {
+        "title": "The Importance of Accessibility in Web Development",
+        "content": "Accessibility is an often-overlooked aspect of web development, but it is crucial for ensuring that everyone can access and use the websites we build. In this post, I will explain why accessibility is important and how we can incorporate it into our development practices.",
+        "date_created": "2022-05-01 12:00:00",
+        "user_id": 5
+    }
+]
