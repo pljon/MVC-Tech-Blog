@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const { Post, User, Comment } = require("../../models");
-const withAuth = require("../../utils/auth");
+const { Post, Comment, User } = require("../models");
+const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
@@ -8,13 +8,13 @@ router.get("/", async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["username"],
+          attributes: ["name"],
         },
         {
           model: Comment,
           include: {
             model: User,
-            attributes: ["username"],
+            attributes: ["name"],
           },
         },
       ],
@@ -47,6 +47,7 @@ router.get("/post/:id", withAuth, async (req, res) => {
       ],
       order: [["date_created", "DESC"]],
     });
+
     if (postData) {
       const post = postData.get({ plain: true });
 
@@ -67,6 +68,7 @@ router.get("/login", (req, res) => {
     res.redirect("/dashboard");
     return;
   }
+
   res.render("login");
 });
 
