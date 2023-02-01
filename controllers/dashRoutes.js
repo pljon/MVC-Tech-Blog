@@ -18,12 +18,12 @@ router.get("/", withAuth, async (req, res) => {
           model: Comment,
           include: {
             model: User,
-            attributes: ["username"],
+            attributes: ["name"],
           },
         },
         {
           model: User,
-          attributes: ["username"],
+          attributes: ["name"],
         },
       ],
     });
