@@ -17,9 +17,8 @@ Post.init(
       unique: true,
     },
     content: {
-      type: DataTypes.TEXT,
+      type: DataTypes.TEXT("long"),
       allowNull: false,
-      unique: true,
     },
     date_created: {
       type: DataTypes.DATE,
